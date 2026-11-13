@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f4;
+  color: #2b3e30;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e3f20;
+  padding: 16px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #8bc34a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #dcedc8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #8bc34a;
+}
+
+/* Section 1: Hero */
+.sust-hero {
+  background-color: #1e3f20;
+  color: #ffffff;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.sust-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.sust-hero p {
+  color: #c5e1a5;
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Section 2: Practices Grid */
+.practices-section {
+  padding: 80px 0;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 45px;
+  align-items: center;
+}
+
+.practices-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  color: #689f38;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.practices-text h2 {
+  font-size: 2rem;
+  color: #1e3f20;
+  margin: 10px 0 18px;
+  line-height: 1.25;
+}
+
+.practices-text p {
+  color: #556b56;
+  margin-bottom: 16px;
+}
+
+/* Section 3: Eco Pillars */
+.pillars-section {
+  background-color: #e8ede8;
+  padding: 80px 0;
+}
+
+.centered-heading {
+  text-align: center;
+  font-size: 2.1rem;
+  color: #1e3f20;
+  margin-bottom: 45px;
+}
+
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.eco-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #689f38;
+}
+
+.eco-card h3 {
+  color: #1e3f20;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.eco-card p {
+  color: #556b56;
+}
+
+/* Section 4: Impact Section */
+.impact-section {
+  padding: 80px 0;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.impact-box {
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #689f38;
+}
+
+.impact-box h3 {
+  color: #1e3f20;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.impact-box p {
+  color: #556b56;
+}
+
+/* Footer */
+.footer {
+  background-color: #122614;
+  color: #a3b8a4;
+  text-align: center;
+  padding: 26px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
